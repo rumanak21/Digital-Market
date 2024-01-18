@@ -4,6 +4,7 @@ import { Icons } from "./Icon"
 import NavItems from "./NavItems"
 import { buttonVariants } from "./ui/button"
 import { Divide } from "lucide-react"
+import Cart from "./Cart"
 
 const Navbar = () => {
     const user = null
@@ -45,6 +46,10 @@ const Navbar = () => {
                                 {user ? null : <div className="flex lg:ml-6" >
                                     <span className="h-6 w-px bg-gray-200" aria-hidden='true' />
                                 </div>}
+
+                                <div className="ml-4 flow-root lg:ml-6">
+                                    <Cart/>
+                                </div>
                             </div>
                         </div>
                     </div>
